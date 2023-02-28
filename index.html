@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Talleres con Firebase</title>
+</head>
+<body>
+    <!-- Formulario de reserva de talleres -->
+    <form id="form-registro">
+        <label for="nom-taller">Taller</label>
+        <input type="text" placeholder="Introduzca nombre del taller" id="nom-taller" required>
+        <label for="nom-profesor">Profesor</label>
+        <input type="text" placeholder="Introduzca nombre del profesor" id="nom-profesor" required>
+        <label for="num-horas">Número de horas para la reservar</label>
+        <input type="text" placeholder="Introduzca el número de horas" id="num-horas" required> 
+        <button id="boton-grabar">Grabar</button>
+    </form>
+    <button id="boton-cancelar" style="visibility: hidden;">Cancelar</button>
+    <!-- Listado de reservas -->
+    <div id="lista-reservas">
+      
+    </div>
+  <!-- Le damos vidilla al asunto que para eso estamos en Desarrollo web cliente -->
+  <script src="./firebase.js" type="module"></script>
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
